@@ -2,7 +2,7 @@
 
 namespace Scripts;
 
-class UserExample extends \Classes\Scripting\UserScript {
+class AdminLog extends \Classes\Scripting\UserScript {
     function OnLogin(\Classes\User $user) {
         \Classes\Singleton::getInstance('\Classes\MySQL')
         ->tableAction('admin_log')
